@@ -1,0 +1,102 @@
+<?php
+include('connection.php');
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    #full{
+        width: 100%;
+        height: auto;
+     } 
+     #inner_full{
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+    #header{
+        width: 100%;
+        height: 50px;
+        background-color: red;
+        color: white;
+    }
+    #body{
+        width: 100%;
+        height: 400px;
+    }
+    #footer{
+        width: 100%;
+        height: 70px;
+        background-color: red;
+        color: white;
+    }
+    ul li{
+        width: 20%;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 55px;
+        background-color: red;
+        color: white;
+        float: left;
+        border-radius: 10px;
+        list-style: none;
+        text-align: center;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    #form{
+        width: 100%;
+        height: 280px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+    }
+    
+        </style>
+    <title>Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="css/s1.css">
+<head>
+    <body>
+        <div id="inner_full">
+            <div id="header"><h2><a href="ad.html" style="text-decoration: none;color: white;">Blood Finder</a></h2></div>
+            <div id="body">
+                <br>
+                <?php
+                $un=$_SESSION['un']:
+                if(!$un)
+                {
+                    header("ad.html");
+                }
+                ?>
+                <h1>Donor's List</h1><br><br>
+                <center><div id="form">
+                   <table>
+                    <tr>
+                        <td width="200px" height="50px"><center><b><font color="blue">Name</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">Address</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">District</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">Pincode</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">Mobile No</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">Age</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">Email</font></b></center></td>
+                        <td width="200px" height="50px"><center><b><font color="blue">Blood Group</font></b></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+                        <td><center>demo</center></td>
+
+                    </tr>
+                   </table>
+                   </div></center>
+                </div>
+                </div></body>
+                </head></html>
