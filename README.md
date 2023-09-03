@@ -1,5 +1,5 @@
 # Mini-Project
-Some codes of my academic mini-project.
+Some codes of my academic mini-project. It is a web application named as 'Blood Finder'
 The user and blood donor are immediately connected by this app.
 Donors can register using this app both directly and through the administrator. Also, it enables you to look for and get in touch with the ideal donor.
 Front-end uses HTML and CSS.
